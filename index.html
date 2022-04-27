@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Projeto Páscoa</title>
+</head>
+
+<body>
+    <div class="container-fluid home">
+        <div class="row">
+            <div class="banner">
+                <span> Donna Chiquinha </span>
+                <i data-toggle="modal" data-target="#myModal" onclick="mostrarPedidos()" class="material-icons">shopping_cart</i>
+                <p>Deixando sua Páscoa mais doce</p>
+
+            </div>
+        </div>
+
+        <div class="row lista">
+            <div class="col-md-6 produto">
+                <div class="titulo">OVOS ESPECIAIS DE PÁSCOA</div>
+                <img src="img/foto01.jpg" alt="">
+                <div class="descricao">Descrição:</div>
+                <div class="valor">R$ 100,00</div>
+                <div class="bt menos">-</div>
+                <div class="quantidade">0</div>
+                <div class="bt mais">+</div>
+
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Seu Pedido</h4>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer form-inline">
+                        <input type="text" name="" id="nome" class="form-control"  placeholder="Nome" >
+                        <input type="text"  name="" id="endereco" class="form-control"   placeholder="Endereço">
+                        <button type="button" onclick="enviar()" class="btn btn-success" id="btEnviar">Enviar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+
+            <div class="row rodape">
+                <div class="col-md-4 pagamento">
+                    <p>Formas de Pagamento</p>
+                    <img src="img/master.png" alt="Cartao Master Card">
+                    <img src="img/visa.png" alt="Cartao Visa">
+                    <img src="img/elo.svg" alt="Cartão Elo">
+                </div>
+
+                <div class="col-md-4 direitos">
+                    <copyright>
+                        2022 Todos os direitos reservado
+
+                    </copyright>
+                </div>
+
+                <div class="col-md-4 atendimento">
+                    <p>Central de Atendimento</p>
+                    <span><img src="" alt="">(61) 1234-5678</span> <br>
+                    <span>Seg a Dom das 9h às 17:30h</span>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
